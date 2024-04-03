@@ -1,13 +1,11 @@
 from contextlib import asynccontextmanager, contextmanager
 from sqlalchemy import create_engine
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session, sessionmaker
 import sqlalchemy as sa
 from dotenv import load_dotenv
 import os
 from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy.orm import mapped_column
 
 
 load_dotenv()
